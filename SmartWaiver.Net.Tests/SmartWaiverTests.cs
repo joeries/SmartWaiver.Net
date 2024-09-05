@@ -7,7 +7,17 @@ namespace SmartWaiver.Net.Tests
 {
     public class SmartWaiverTests
     {
-        readonly string _apiKey = "";
+        readonly string _apiKey = "bf15aebe4fcbf1244c25ed3294e00144";
+
+        [Fact]
+        public void RetrieveAccountMessage()
+        {
+            ISmartWaiver smartWaiver = new SmartWaiver(_apiKey);
+
+            var exception = Record.Exception(() => smartWaiver.WebhookQueue.RetrieveAccountMessage());
+            Assert.Null(exception);
+        }
+
         [Fact]
         public void VerifyAutoTagUpdate()
         {
