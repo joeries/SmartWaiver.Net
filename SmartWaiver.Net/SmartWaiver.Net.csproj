@@ -9,11 +9,14 @@
     <PackageId>Joeries.SmartWaiver.Net</PackageId>
     <PackageDescription>Smart Waiver Client Library</PackageDescription>
     <RepositoryUrl>https://github.com/joeries/SmartWaiver.Net</RepositoryUrl>
-    <Version>1.6.0</Version>
+    <Version>1.6.1</Version>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
 	  <Title>SmartWaiver Api SDK for .Net</Title>
-	  <Description>SmartWaiver Api SDK for .Net</Description>
+	  <Description>SmartWaiver Api SDK for .Net.
+(1)Webhook Queues API added;
+(2)Sms API added;
+(3)Others.</Description>
 	  <PackageProjectUrl>https://github.com/joeries/SmartWaiver.Net</PackageProjectUrl>
   </PropertyGroup>
 

@@ -25,7 +25,7 @@ namespace SmartWaiver.Net.Clients
             var request = new RestRequest("/v4/webhooks/queues/account/{messageId}");
             request.AddUrlSegment("messageId", messageId);
 
-            var response = _client.ExecuteAsync<DeleteAccountMessageResponse>(request).Result;
+            var response = _client.ExecuteAsync<DeleteAccountMessageResponse>(request, Method.Delete).Result;
 
             if (response.IsSuccessful)
             {
