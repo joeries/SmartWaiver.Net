@@ -32,7 +32,7 @@ namespace SmartWaiver.Net.Clients
                 )
             );
 
-            var response = _client.ExecuteAsync<SendSmsResponse>(request).Result;
+            var response = _client.ExecuteAsync<SendSmsResponse>(request, Method.Post).Result;
 
             if (response.IsSuccessful)
             {
