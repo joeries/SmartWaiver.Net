@@ -7,8 +7,8 @@ namespace SmartWaiver.Net.Objects
         public SendSmsRequest() { }
 
         [JsonProperty(PropertyName = "templateId")]
-        public int TemplateId { get; set; }
+        public string TemplateId { get; set; }
         [JsonProperty(PropertyName = "number")]
-        public int Number { get; set; }
+        public string Number { get; set; }
     }
 }
